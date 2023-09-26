@@ -1,0 +1,72 @@
+
+html {
+    scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
+}
+
+body{
+    font-family: 'Shadows Into Light', cursive
+    background-color: #fff;}  /*define a cor e a fonte do corpo */
+
+.navbar{border-bottom: 5px solid #f606ba;}
+.navbar-brand,
+.navbar-nav .nav-link{
+    color:#ffffff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover, /*permite que a cor seja alterado quando passa o mouse por cima*/
+.navbar-nav .nav-link:focus{
+    color: rgb(246, 54, 230) !important; /*define a cor ao passar o mouse por cima*/
+}
+
+.navbar-toggler{border: #fff;} /*Ele faz o botão ter uma borda branca e o ícone dentro dele ter um fundo branco. Isso é feito para personalizar o visual do botão.*/
+.navbar-toggler-icon{background-color: #fff;}
+
+.btn:hover, /*permite que a cor seja alterado quando passa o mouse por cima*/
+.btn:focus{
+    background-color: #ff00bf !important;  
+    color: #fff !important;
+} /*define a cor de fundo*/
+
+/* Estilos para os ícones das redes sociais */
+.social-links i {
+    font-size: 30px; /* Tamanho dos ícones */
+    color: #17c6c6; /* Cor dos ícones */
+}
+
+.social-links-verde i {
+    font-size: 30px; /* Tamanho dos ícones */
+    color: #17c6c6; /* Cor dos ícones */
+}
+/* Efeito ao passar o mouse sobre os ícones das redes sociais */
+.social-links a:hover i {
+    color: #e715a1; /* Cor ao passar o mouse */
+}
+
+.social-links-vermelho a:hover i {
+    color: #e715a1; /* Cor ao passar o mouse */
+}
+#nome_loja{
+    font-family: 'Shadows Into Light'; /*Define a família de fontes como "Shadows Into Light".*/
+    font-weight: 400; /* Define o peso da fonte como 400*/
+    font-size: x-large; /*Define o tamanho da fonte como "x-large", que é maior que o tamanho padrão.*/
+}
+#descricao{
+    font-size:xx-large; /*Define o tamanho da fonte como "xx-large"*/
+    font-weight: 700; /* Define o peso da fonte como 400*/
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Define um preenchimento inferior que cria uma proporção de 16:9. */
+    padding-top: 30px; /*ajustar o espaço acima do vídeo */
+    height: 0; /* Define a altura inicial como 0, o que oculta o vídeo quando ele não está sendo exibido.*/
+    overflow: hidden; /*Esconde qualquer conteúdo que saia do container.*/
+}
+
+.video-container video {
+    position: absolute; /* Define a posição, o que permite que o vídeo se ajuste ao container.*/
+    top: 0; /*Alinha o vídeo no topo do container.*/
+    left: 0; /*Alinha o vídeo à esquerda do container.*/
+    width: 100%; /*Faz com que o vídeo ocupe 100% da largura do container, fazendo ficar responsivo.*/
+    height: 100%; /* Faz com que o vídeo ocupe 100% da altura do container*/
+}
